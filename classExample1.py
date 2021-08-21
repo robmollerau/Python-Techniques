@@ -40,7 +40,7 @@ if __name__ == "__main__" :
     # Variables - using NewType to set type value
     animalColour = NewType( "", str )
 
-    # Instatiate class 
+    # Instantiate class 
     myAnimal = Animal()
 
     # Print class version
