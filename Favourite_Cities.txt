@@ -1,3 +1,6 @@
 Paris
 Prague
 Barcelona
+a
+b
+c

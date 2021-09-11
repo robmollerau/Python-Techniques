@@ -9,7 +9,7 @@ if __name__ == '__main__' :
     # Get path of this python script
     scriptPath = Path(__file__).parent.absolute()
 
-    # Get cities 
+    # Read cities, a blank entry exits loop
     while continueLoop:   
       favouriteCity = input( 'Enter a favourity city, enter blank to end: ' )
       if ( favouriteCity == '' ):
@@ -17,7 +17,7 @@ if __name__ == '__main__' :
       else:
           favouriteCityList.append( favouriteCity )  
 
-    # Show favourity cities
+    # Show favourite cities from list
     print( 'Your favour cities are...' )
     for listIndex, listItem in enumerate( favouriteCityList ):
         print( str( listIndex + 1 ) + ' - ' + listItem )
