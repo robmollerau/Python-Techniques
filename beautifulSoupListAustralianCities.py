@@ -45,7 +45,7 @@ if __name__ == '__main__' :
 
         cityList = []
 
-        # Find city table - look for class marker - use Chrome inspect function to locate table first
+        # Find city table - look for class marker - use Chrome inspect function to locate table class first
         citiesTable = soup.find( 'table', { "class" : "wikitable sortable plainrowheaders" } )        
 
         # Iterate all table rows
@@ -62,10 +62,10 @@ if __name__ == '__main__' :
                 state = cols[ CONST.STATE      ].text.strip()
                 pop   = cols[ CONST.POPULATION ].text.strip()
 
-                # Add rank to list
+                # Load city information to list 
                 cityList.append( [ rank, city, state, pop ] )
 
-    # Print population list
+    # Print population list - print formatting commands %-nns used to align items
     for rowIndex, rowItem in enumerate( cityList ):
         print( 'Rank: %3s   City: %-35s State: %-45s Population: %10s' % \
           ( rowItem[ CONST.CITY_RANK  ], \
