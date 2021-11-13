@@ -6,8 +6,8 @@ Ensure you are running Python 3.9.x and above.
 
 ## Information
 
-A collection of Python techniques and best practices for building applications. Information on these techniques listed below:< br />
-<br />
+A collection of Python techniques and best practices for building applications. Information on these techniques listed below:
+
 * pythonFunctions.py - Function usage with type hinting and assertions to ensure correct data.
 
 ## Usage
